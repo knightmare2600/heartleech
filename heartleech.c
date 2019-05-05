@@ -75,6 +75,8 @@ typedef uintptr_t pthread_t;
 #include <errno.h>
 #include <dlfcn.h>
 #include <pthread.h>
+#include "./openssl/crypto/bn/bn_lcl.h"
+#include "./openssl/ssl/ssl_locl.h"
 #define WSAGetLastError() (errno)
 #define closesocket(fd) close(fd)
 #define WSA(err) (err)
